@@ -1,4 +1,4 @@
-package me.bonasera.obfuscator;
+package me.bonasera.obfuscator.implementation;
 
 import java.util.Map;
 

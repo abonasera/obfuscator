@@ -1,7 +1,7 @@
-package me.bonasera;
+package me.bonasera.obfuscator;
 
-import me.bonasera.obfuscator.Obfuscator;
-import me.bonasera.utils.Utils;
+import me.bonasera.obfuscator.implementation.Obfuscator;
+import me.bonasera.obfuscator.utils.Utils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

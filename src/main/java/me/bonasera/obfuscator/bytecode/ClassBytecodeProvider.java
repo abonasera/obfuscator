@@ -1,6 +1,6 @@
-package me.bonasera.bytecode;
+package me.bonasera.obfuscator.bytecode;
 
-import me.bonasera.utils.Utils;
+import me.bonasera.obfuscator.utils.Utils;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Opcodes;

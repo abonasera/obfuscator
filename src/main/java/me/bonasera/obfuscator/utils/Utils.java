@@ -1,4 +1,4 @@
-package me.bonasera.utils;
+package me.bonasera.obfuscator.utils;
 
 import java.io.*;
 

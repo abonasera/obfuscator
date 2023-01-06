@@ -1,8 +1,8 @@
-package me.bonasera.obfuscator;
+package me.bonasera.obfuscator.implementation;
 
-import me.bonasera.Main;
-import me.bonasera.bytecode.ClassBytecodeProvider;
-import me.bonasera.obfuscator.processors.StringProcessor;
+import me.bonasera.obfuscator.Main;
+import me.bonasera.obfuscator.bytecode.ClassBytecodeProvider;
+import me.bonasera.obfuscator.implementation.processors.StringProcessor;
 
 import java.io.File;
 import java.io.FileOutputStream;

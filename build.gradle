@@ -3,8 +3,12 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
-group 'org.example'
 version '0.1'
+group 'me.bonasera'
+
+base {
+    archivesName = 'obf'
+}
 
 repositories {
     mavenCentral()
@@ -21,7 +25,7 @@ dependencies {
 }
 
 jar.manifest.attributes(
-        'Main-Class': 'org.example.Main'
+        'Main-Class': 'me.bonasera.obfuscator.Main'
 )
 
 shadowJar {

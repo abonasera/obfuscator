@@ -1,8 +1,8 @@
-package me.bonasera.obfuscator.processors;
+package me.bonasera.obfuscator.implementation.processors;
 
-import me.bonasera.Main;
-import me.bonasera.bytecode.ClassBytecodeProvider;
-import me.bonasera.obfuscator.IProcessor;
+import me.bonasera.obfuscator.Main;
+import me.bonasera.obfuscator.bytecode.ClassBytecodeProvider;
+import me.bonasera.obfuscator.implementation.IProcessor;
 import org.objectweb.asm.Opcodes;
 import org.objectweb.asm.tree.*;
 
