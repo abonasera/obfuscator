@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group 'org.example'
+version '0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // ObjectWeb ASM
+    implementation 'org.ow2.asm:asm:9.4'
+    implementation 'org.ow2.asm:asm-tree:9.4'
+
+    // Apache Log4J
+    implementation 'org.apache.logging.log4j:log4j-api:2.19.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.19.0'
+}
+
+jar.manifest.attributes(
+        'Main-Class': 'org.example.Main'
+)
+
+shadowJar {
+    dependencies {
+        it.include(it.dependency('org.ow2.asm:asm'))
+        it.include(it.dependency('org.ow2.asm:asm-tree'))
+        it.include(it.dependency('org.apache.logging.log4j:log4j-api'))
+        it.include(it.dependency('org.apache.logging.log4j:log4j-core'))
+    }
+    classifier('')
+}
+
+build.dependsOn(shadowJar)
